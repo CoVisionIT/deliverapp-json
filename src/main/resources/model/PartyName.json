@@ -1,0 +1,16 @@
+{
+  "id": "http://deliverapp.covisionit.be/PartyName.json",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "description": "A class for defining the name of a party.",
+  "required": [
+    "Name"
+  ],
+  "properties": {
+    "Name": {
+      "title": "Party Name. Name",
+      "description": "The name of the party.",
+      "type": "string"
+    }
+  }
+}

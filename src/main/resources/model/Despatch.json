@@ -1,0 +1,23 @@
+{
+  "id": "http://deliverapp.covisionit.be/Despatch.json",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "description": "A class to describe the despatching of goods (their pickup for delivery).",
+  "properties": {
+    "ActualDespatchDate": {
+      "title": "Despatch. Actual_ Despatch Date. Date",
+      "description": "The actual despatch (pickup) date.",
+      "type": "string"
+    },
+    "ActualDespatchTime": {
+      "title": "Despatch. Actual_ Despatch Time. Time",
+      "description": "The actual despatch (pickup) time.",
+      "type": "string"
+    },
+    "DespatchAddress": {
+      "title": "Despatch. Despatch_ Address. Address",
+      "description": "The address of the despatch (pickup).",
+      "$ref": "Address"
+    }
+  }
+}

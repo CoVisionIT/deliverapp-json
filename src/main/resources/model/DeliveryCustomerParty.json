@@ -1,0 +1,18 @@
+{
+  "id": "http://deliverapp.covisionit.be/DeliveryCustomerParty.json",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "description": "A class to describe a customer party.",
+  "properties": {
+    "Party": {
+      "title": "Customer Party. Party",
+      "description": "The customer party itself.",
+      "$ref": "Party"
+    },
+    "DeliveryContact": {
+      "title": "Customer Party. Delivery_ Contact. Contact",
+      "description": "A customer contact for deliveries.",
+      "$ref": "Contact"
+    }
+  }
+}

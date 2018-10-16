@@ -1,0 +1,13 @@
+{
+  "id": "http://deliverapp.covisionit.be/Person.json",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "description": "A class to describe a person.",
+  "properties": {
+    "IdentityDocumentReference": {
+      "title": "Person. Identity_ Document Reference. Document Reference",
+      "description": "A reference to a document that can precisely identify this person (e.g., a driver's license).",
+      "$ref": "DocumentReference"
+    }
+  }
+}

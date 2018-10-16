@@ -1,0 +1,56 @@
+{
+  "DespatchAdvice": {
+    "ID": "07529e54-1f87-4ffb-97da-9dc286a567e8",
+    "DespatchSupplierParty": {
+      "Party": {
+        "PartyIdentification": {
+          "ID": "supplier id"
+        },
+        "PartyName": {
+          "Name": "supplier name"
+        },
+        "Contact": {
+          "ElectronicMail": "supplier email"
+        }
+      }
+    },
+    "DeliveryCustomerParty": {
+      "Party": {
+        "PartyIdentification": {
+          "ID": "customer id"
+        },
+        "PartyName": {
+          "Name": "customer name"
+        }
+      }
+    },
+    "Shipment": {
+      "ID": "delivery note number",
+      "Delivery": {
+        "Despatch": {
+          "ActualDespatchDate": "2018-10-15",
+          "ActualDespatchTime": "17:50:41",
+          "DespatchAddress": {
+            "ID": "site reference"
+          }
+        },
+        "DeliveryLocation": {
+          "LocationCoordinate": {
+            "LatitudeDegreesMeasure": 50.894824,
+            "LongitudeDegreesMeasure": 4.341777
+          }
+        }
+      }
+    },
+    "Status": {
+      "Name": "REMARKS",
+      "Remarks": "Not OK"
+    },
+    "AdditionalDocuments": [
+      {
+        "BinaryContent": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAIBAQEBAQIBAQECAgICAgQDAgICAgUEBAMEBgUGBgYFBgYGBwkIBgcJBwYGCAsICQoKCgoKBggLDAsKDAkKCgr/2wBDAQICAgICAgUDAwUKBwYHCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgr/wAARCAASABkDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAcICQP/xAAuEAACAgEDAQcCBgMAAAAAAAABAgMEBQAGERIHCAkTFBVBITEkMlFTVNFVkZP/xAAVAQEBAAAAAAAAAAAAAAAAAAAFBP/EACIRAAEDAwMFAAAAAAAAAAAAAAEABXECBDQDscERIVFh8P/aAAwDAQACEQMRAD8Af/cjweC372+YXbGYxGMv1LUF9Hq5THi1Xc+hsFfMhbgSKGCnpJH2+hB+urPyHd73dLk9wbjns4DM7gbGJaw921HfoRW8qqqUFxIZmiavHLWgKMitMkaxAkvAss0TeH/mcnlO8/tythchHDekr5JalizVeaGKX26z0M8auhkUHglQykgcBl551pRHn2w1bEY7crz28jedaslrGYC16drAgeV3YL5vpYj5T8GWTpDMkfmM7oGKZ8YzwEi59tcRyVN3fcqZbDUdjYrP2qU7RwW1WTH1Ja8fUsdRZOmJ5JCiFlLKvW3SrBTyVLujvKrfyh/s/wBaozxENwy1ex/Hwe12asabtg6bBUKkxarZYleDz+YkHqCkkEgEfXUge/2P3Z9GOYFN5V76bKyzpqNuB95Xbw07Nm93k6aXbDzLHgsk0YlcsFb05Xkc/Y8Ejn9CR860f7PMjkLuzXsXL000i57Jxh5ZSxCLfnRV5PwFVVA+AoH2GjRpRoxTJ2Cjc8gQOUlfE2s2IewLDzQzujnekPLKxBP4e386iD3XKf5Kx/2b+9GjRbtmmArbDHElf//Z",
+        "BinaryMimeCode": "image/jpeg"
+      }
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": "http://deliverapp.covisionit.be/AdditionalDocument.json",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "description": "A class to describe an additional document.",
+  "required": [
+    "BinaryContent",
+    "BinaryMimeCode"
+  ],
+  "properties": {
+    "BinaryContent": {
+      "type": "string"
+    },
+    "BinaryMimeCode": {
+      "type": "string"
+    }
+  }
+}

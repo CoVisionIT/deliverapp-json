@@ -1,0 +1,36 @@
+#%RAML 0.8
+---
+title: DeliverApp Despatch Advice
+version: 0.1
+
+schemas:
+  - Address:                                        !include model/Address.json
+  - AdditionalDocument:                             !include model/AdditionalDocument.json
+  - Consignment:                                    !include model/Consignment.json
+  - Contact:                                        !include model/Contact.json
+  - Delivery:                                       !include model/Delivery.json
+  - DeliveryCustomerParty:                          !include model/DeliveryCustomerParty.json
+  - Despatch:                                       !include model/Despatch.json
+  - DespatchAdvice:                                 !include model/DespatchAdvice.json
+  - DespatchAdviceDocument:                         !include model/DespatchAdviceDocument.json
+  - DespatchAdviceStatus:                           !include model/DespatchAdviceStatus.json
+  - DespatchSupplierParty:                          !include model/DespatchSupplierParty.json
+  - DocumentReference:                              !include model/DocumentReference.json
+  - Location:                                       !include model/Location.json
+  - LocationCoordinate:                             !include model/LocationCoordinate.json
+  - Party:                                          !include model/Party.json
+  - PartyIdentification:                            !include model/PartyIdentification.json
+  - PartyName:                                      !include model/PartyName.json
+  - Person:                                         !include model/Person.json
+  - Shipment:                                       !include model/Shipment.json
+
+/rest/despatchadvice:
+  post:
+    body:
+      application/json:
+        schema: DespatchAdviceDocument
+    responses:
+      200:
+        body:
+          application/json:
+            schema: DespatchAdviceDocument

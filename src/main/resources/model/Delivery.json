@@ -1,0 +1,23 @@
+{
+  "id": "http://deliverapp.covisionit.be/Delivery.json",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "description": "A class to describe a delivery.",
+  "properties": {
+    "TrackingID": {
+      "title": "Delivery. Tracking Identifier. Identifier",
+      "description": "The delivery Tracking ID (for transport tracking).",
+      "type": "string"
+    },
+    "Despatch": {
+      "title": "Delivery. Despatch",
+      "description": "The despatch (pickup) associated with this delivery.",
+      "$ref": "Despatch"
+    },
+    "DeliveryLocation": {
+      "title": "Delivery. Delivery_ Location. Location",
+      "description": "The delivery location.",
+      "$ref": "Location"
+    }
+  }
+}

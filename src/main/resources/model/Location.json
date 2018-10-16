@@ -1,0 +1,13 @@
+{
+  "id": "http://deliverapp.covisionit.be/Location.json",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "description": "A class to describe a location.",
+  "properties": {
+    "LocationCoordinate": {
+      "title": "Location. Location Coordinate",
+      "description": "The geographical coordinates of this location.",
+      "$ref": "LocationCoordinate"
+    }
+  }
+}

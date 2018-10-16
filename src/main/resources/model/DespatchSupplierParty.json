@@ -1,0 +1,16 @@
+{
+  "id": "http://deliverapp.covisionit.be/DespatchSupplierParty.json",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "description": "A class to describe a supplier party.",
+  "properties": {
+    "Party": {
+      "title": "Supplier Party. Party",
+      "description": "The supplier party itself.",
+      "$ref": "Party"
+    }
+  },
+  "required": [
+    "Party"
+  ]
+}

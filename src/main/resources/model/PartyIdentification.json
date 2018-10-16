@@ -1,0 +1,16 @@
+{
+  "id": "http://deliverapp.covisionit.be/PartyIdentification.json",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "description": "A class to define an identifier for a party.",
+  "required": [
+    "ID"
+  ],
+  "properties": {
+    "ID": {
+      "title": "Party Identification. Identifier",
+      "description": "An identifier for the party.",
+      "type": "string"
+    }
+  }
+}

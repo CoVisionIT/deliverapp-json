@@ -1,0 +1,21 @@
+{
+  "id": "http://deliverapp.covisionit.be/DespatchAdviceStatus.json",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "description": "A class to describe a status of a despatch advice.",
+  "required": [
+    "Name"
+  ],
+  "properties": {
+    "Name": {
+      "enum": [
+        "ACCEPTED",
+        "REFUSED",
+        "REMARKS"
+      ]
+    },
+    "Remarks": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "http://deliverapp.covisionit.be/Party.json",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "description": "A class to describe an organization, sub-organization, or individual fulfilling a role in a business process.",
+  "required": [
+    "PartyIdentification",
+    "PartyName"
+  ],
+  "properties": {
+    "PartyIdentification": {
+      "title": "Party. Party Identification",
+      "description": "An identifier for this party.",
+      "$ref": "PartyIdentification"
+    },
+    "PartyName": {
+      "title": "Party. Party Name",
+      "description": "A name for this party.",
+      "$ref": "PartyName"
+    },
+    "PostalAddress": {
+      "title": "Party. Postal_ Address. Address",
+      "description": "The party's postal address.",
+      "$ref": "Address"
+    },
+    "Contact": {
+      "title": "Party. Contact",
+      "description": "The primary contact for this party.",
+      "$ref": "Contact"
+    },
+    "Person": {
+      "title": "Party. Person",
+      "description": "A person associated with this party.",
+      "$ref": "Person"
+    }
+  }
+}

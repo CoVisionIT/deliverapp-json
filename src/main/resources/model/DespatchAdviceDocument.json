@@ -1,0 +1,15 @@
+{
+  "id": "http://deliverapp.covisionit.be/DespatchAdviceDocument.json",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "description": "DeliverApp DespatchAdvice Document",
+  "properties": {
+    "DespatchAdvice": {
+      "$ref": "DespatchAdvice"
+    }
+  },
+  "required": [
+    "DespatchAdvice"
+  ],
+  "additionalProperties": false
+}

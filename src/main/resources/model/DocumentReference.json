@@ -1,0 +1,21 @@
+{
+  "id": "http://deliverapp.covisionit.be/DocumentReference.json",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "description": "A class to define a reference to a document.",
+  "required": [
+    "ID"
+  ],
+  "properties": {
+    "ID": {
+      "title": "Document Reference. Identifier",
+      "description": "An identifier for the referenced document.",
+      "type": "string"
+    },
+    "DocumentType": {
+      "title": "Document Reference. Document Type. Text",
+      "description": "The type of document being referenced, expressed as text.",
+      "type": "string"
+    }
+  }
+}

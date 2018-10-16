@@ -1,0 +1,28 @@
+{
+  "id": "http://deliverapp.covisionit.be/Contact.json",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "description": "A class to describe a contactable person or department in an organization.",
+  "properties": {
+    "Name": {
+      "title": "Contact. Name",
+      "description": "The name of this contact. It is recommended that this be used for a functional name and not a personal name.",
+      "type": "string"
+    },
+    "Telephone": {
+      "title": "Contact. Telephone. Text",
+      "description": "The primary telephone number of this contact.",
+      "type": "string"
+    },
+    "Telefax": {
+      "title": "Contact. Telefax. Text",
+      "description": "The primary fax number of this contact.",
+      "type": "string"
+    },
+    "ElectronicMail": {
+      "title": "Contact. Electronic_ Mail. Text",
+      "description": "The primary email address of this contact.",
+      "type": "string"
+    }
+  }
+}

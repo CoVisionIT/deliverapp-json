@@ -1,0 +1,26 @@
+{
+  "id": "http://deliverapp.covisionit.be/Shipment.json",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "description": "A class defining an identifiable collection of one or more goods items to be transported between the seller party and the buyer party. This information may be defined within a commercial contract. A shipment can be transported in different consignments (e.g., split for logistical purposes).",
+  "required": [
+    "ID"
+  ],
+  "properties": {
+    "ID": {
+      "title": "Shipment. Identifier",
+      "description": "An identifier for this shipment.",
+      "type": "string"
+    },
+    "Consignment": {
+      "title": "Shipment. Consignment",
+      "description": "A consignment covering this shipment.",
+      "$ref": "Consignment"
+    },
+    "Delivery": {
+      "title": "Shipment. Delivery",
+      "description": "The delivery of this shipment.",
+      "$ref": "Delivery"
+    }
+  }
+}

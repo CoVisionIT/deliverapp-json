@@ -1,0 +1,46 @@
+{
+  "id": "http://deliverapp.covisionit.be/DespatchAdvice.json",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "description": "DeliverApp DespatchAdvice. A document used to describe the despatch or delivery of goods and services.",
+  "properties": {
+    "ID": {
+      "title": "Despatch Advice. Identifier",
+      "description": "An identifier for this document, assigned by the sender.",
+      "type": "string"
+    },
+    "DespatchSupplierParty": {
+      "title": "Despatch Advice. Despatch_ Supplier Party. Supplier Party",
+      "description": "The despatch party.",
+      "$ref": "DespatchSupplierParty"
+    },
+    "DeliveryCustomerParty": {
+      "title": "Despatch Advice. Delivery_ Customer Party. Customer Party",
+      "description": "The delivery recipient.",
+      "$ref": "DeliveryCustomerParty"
+    },
+    "Shipment": {
+      "title": "Despatch Advice. Shipment",
+      "description": "The shipment.",
+      "$ref": "Shipment"
+    },
+    "Status": {
+      "title": "Despatch Advice Status",
+      "$ref": "DespatchAdviceStatus"
+    },
+    "AdditionalDocuments": {
+      "title": "Despatch Advice Additional Documents",
+      "type": "array",
+      "items": {
+        "$ref": "AdditionalDocument"
+      }
+    }
+  },
+  "required": [
+    "ID",
+    "DespatchSupplierParty",
+    "DeliveryCustomerParty",
+    "Shipment",
+    "Status"
+  ]
+}
