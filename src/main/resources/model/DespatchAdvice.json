@@ -9,6 +9,19 @@
       "description": "An identifier for this document, assigned by the sender.",
       "type": "string"
     },
+    "Note": {
+      "title": "Despatch Advice. Note. Text",
+      "description": "Free-form text pertinent to this document, conveying information that is not contained explicitly in other structures.",
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "OrderReference": {
+      "title": "Despatch Advice. Order Reference",
+      "description": "A reference to an Order with which this Despatch Advice is associated.",
+      "$ref": "OrderReference"
+    },
     "DespatchSupplierParty": {
       "title": "Despatch Advice. Despatch_ Supplier Party. Supplier Party",
       "description": "The despatch party.",
@@ -23,6 +36,14 @@
       "title": "Despatch Advice. Shipment",
       "description": "The shipment.",
       "$ref": "Shipment"
+    },
+    "DespatchLine": {
+      "title": "Despatch Advice. Despatch Line",
+      "description": "A Despatch Line associated with a kind of item delivered.",
+      "items": {
+        "$ref": "DespatchLine"
+      },
+      "type": "array"
     },
     "Status": {
       "title": "Despatch Advice Status",

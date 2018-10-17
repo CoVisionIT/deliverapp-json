@@ -1,0 +1,16 @@
+{
+  "id": "http://deliverapp.covisionit.be/OrderReference.json",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "description": "A class to define a reference to an Order.",
+  "required": [
+    "ID"
+  ],
+  "properties": {
+    "ID": {
+      "title": "Order Reference. Identifier",
+      "description": "An identifier for this order reference, assigned by the buyer.",
+      "type": "string"
+    }
+  }
+}

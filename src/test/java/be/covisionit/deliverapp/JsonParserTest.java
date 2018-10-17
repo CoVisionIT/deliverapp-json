@@ -28,10 +28,12 @@ public class JsonParserTest {
         DespatchAdvice da = despatchAdviceDocument.getDespatchAdvice();
         assertEquals("07529e54-1f87-4ffb-97da-9dc286a567e8", da.getID());
 
+        assertEquals(da.getOrderReference().getID(), "oREF");
+
         Party supplier = da.getDespatchSupplierParty().getParty();
         assertEquals("supplier id", supplier.getPartyIdentification().getID());
         assertEquals("supplier name", supplier.getPartyName().getName());
-        assertEquals("supplier email", supplier.getContact().getElectronicMail());
+        assertEquals("supplier mail", supplier.getContact().getElectronicMail());
 
         Party customer = da.getDeliveryCustomerParty().getParty();
         assertEquals("customer id", customer.getPartyIdentification().getID());
@@ -52,6 +54,13 @@ public class JsonParserTest {
         LocationCoordinate locationCoordinate = deliveryLocation.getLocationCoordinate();
         assertEquals(50.894824, locationCoordinate.getLatitudeDegreesMeasure(), 0.0001);
         assertEquals(4.341777, locationCoordinate.getLongitudeDegreesMeasure(), 0.0001);
+
+        DespatchLine despatchLine = da.getDespatchLine().get(0);
+        assertEquals("1", despatchLine.getID());
+        assertEquals("1", despatchLine.getNote());
+        assertEquals(1, despatchLine.getDeliveredQuantity(), 0);
+        assertEquals("EA", despatchLine.getDeliveredQuantityUnitCode());
+        assertEquals("d", despatchLine.getItem().getDescription());
 
         switch (da.getStatus().getName()) {
             case ACCEPTED:

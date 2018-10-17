@@ -1,0 +1,13 @@
+{
+  "id": "http://deliverapp.covisionit.be/Item.json",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "description": "A class to describe an item of trade. It includes a generic description applicable to all examples of the item together with optional subsidiary descriptions of any number of actual instances of the type.",
+  "properties": {
+    "Description": {
+      "title": "Item. Description. Text",
+      "description": "Text describing this item.",
+      "type": "string"
+    }
+  }
+}

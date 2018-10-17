@@ -1,6 +1,9 @@
 {
   "DespatchAdvice": {
     "ID": "07529e54-1f87-4ffb-97da-9dc286a567e8",
+    "OrderReference": {
+      "ID": "oREF"
+    },
     "DespatchSupplierParty": {
       "Party": {
         "PartyIdentification": {
@@ -10,7 +13,7 @@
           "Name": "supplier name"
         },
         "Contact": {
-          "ElectronicMail": "supplier email"
+          "ElectronicMail": "supplier mail"
         }
       }
     },
@@ -37,11 +40,24 @@
         "DeliveryLocation": {
           "LocationCoordinate": {
             "LatitudeDegreesMeasure": 50.894824,
-            "LongitudeDegreesMeasure": 4.341777
+            "LatitudeDegreesMeasureUnitCode": "DD",
+            "LongitudeDegreesMeasure": 4.341777,
+            "LongitudeDegreesMeasureUnitCode": "DD"
           }
         }
       }
     },
+    "DespatchLine": [
+      {
+        "ID": "1",
+        "Note": "1",
+        "DeliveredQuantity": 1.0,
+        "DeliveredQuantityUnitCode": "EA",
+        "Item": {
+          "Description": "d"
+        }
+      }
+    ],
     "Status": {
       "Name": "REMARKS",
       "Remarks": "Not OK"
