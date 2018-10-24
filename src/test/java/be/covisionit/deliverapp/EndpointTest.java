@@ -25,11 +25,10 @@ public class EndpointTest {
 
         DespatchAdviceDocument despatchAdviceDocument = getDespatchAdviceDocument();
 
-        Response<DespatchAdviceDocument> res = endpoint.rest.despatchadvice.post(despatchAdviceDocument).get();
+        Response<String> res = endpoint.rest.despatchadvice.post(despatchAdviceDocument).get();
         Assert.assertEquals(res.getStringBody(), 200, res.getStatus());
 
-        DespatchAdviceDocument response = res.getBody();
-        Assert.assertEquals(despatchAdviceDocument.getDespatchAdvice().getID(), response.getDespatchAdvice().getID());
+        Assert.assertEquals(despatchAdviceDocument.getDespatchAdvice().getID(), res.getStringBody());
     }
 
     private DeliverAppEndpoint getEndpoint() {

@@ -23,7 +23,7 @@ public class JsonParserTest {
         String jsonString = IOUtils.resourceToString("json/MyDespatch.json", StandardCharsets.UTF_8, classLoader);
 
         DespatchAdviceDocument despatchAdviceDocument =
-                Json.parseBodyToObject(jsonString, "be.covisionit.deliverapp.DespatchAdviceDocument");
+                Json.parseBodyToObject(jsonString, DespatchAdviceDocument.class.getCanonicalName());
 
         DespatchAdvice da = despatchAdviceDocument.getDespatchAdvice();
         assertEquals("07529e54-1f87-4ffb-97da-9dc286a567e8", da.getID());
