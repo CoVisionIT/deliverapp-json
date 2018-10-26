@@ -1,0 +1,13 @@
+{
+  "id": "http://deliverapp.covisionit.be/Country.json",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "description": "A class to describe a country.",
+  "properties": {
+    "IdentificationCode": {
+      "title": "Country. Identification Code. Code",
+      "description": "A code signifying this country.",
+      "type": "string"
+    }
+  }
+}

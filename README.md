@@ -13,7 +13,7 @@ Add the deliverapp-json repository and the deliverapp-json dependency:
     <dependency>
         <groupId>be.covisionit</groupId>
         <artifactId>deliverapp-json</artifactId>
-        <version>1.0.1</version>
+        <version>1.0.2</version>
     </dependency>
 
 Alternatively copy the [JSON schema files](https://github.com/CoVisionIT/deliverapp-json/tree/master/src/main/resources/model) 

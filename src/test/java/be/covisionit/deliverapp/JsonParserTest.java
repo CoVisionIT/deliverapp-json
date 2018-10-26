@@ -49,6 +49,9 @@ public class JsonParserTest {
         assertEquals("17:50:41", despatch.getActualDespatchTime());
         Address despatchAddress = despatch.getDespatchAddress();
         assertEquals("site reference", despatchAddress.getID());
+        assertEquals("Schelle", despatchAddress.getCityName());
+        assertEquals("2627", despatchAddress.getPostalZone());
+        assertEquals("BE", despatchAddress.getCountry().getIdentificationCode());
 
         Location deliveryLocation = delivery.getDeliveryLocation();
         LocationCoordinate locationCoordinate = deliveryLocation.getLocationCoordinate();

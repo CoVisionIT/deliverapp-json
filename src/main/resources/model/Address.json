@@ -37,7 +37,7 @@
     "Country": {
       "title": "Address. Country",
       "description": "The country in which this address is situated.",
-      "type": "string"
+      "$ref": "Country"
     }
   }
 }

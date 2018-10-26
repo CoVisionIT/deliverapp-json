@@ -34,7 +34,12 @@
           "ActualDespatchDate": "2018-10-15",
           "ActualDespatchTime": "17:50:41",
           "DespatchAddress": {
-            "ID": "site reference"
+            "ID": "site reference",
+            "CityName": "Schelle",
+            "PostalZone": "2627",
+            "Country": {
+              "IdentificationCode": "BE"
+            }
           }
         },
         "DeliveryLocation": {
