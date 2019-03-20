@@ -4,9 +4,9 @@
   "type": "object",
   "description": "A class to describe an item of trade. It includes a generic description applicable to all examples of the item together with optional subsidiary descriptions of any number of actual instances of the type.",
   "properties": {
-    "Description": {
-      "title": "Item. Description. Text",
-      "description": "Text describing this item.",
+    "Name": {
+      "title": "Item. Name",
+      "description": "A short name given to this item, such as a name from a catalogue.",
       "type": "string"
     }
   }

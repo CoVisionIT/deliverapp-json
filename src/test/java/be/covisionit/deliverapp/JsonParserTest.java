@@ -63,7 +63,7 @@ public class JsonParserTest {
         assertEquals("1", despatchLine.getNote());
         assertEquals(1, despatchLine.getDeliveredQuantity(), 0);
         assertEquals("EA", despatchLine.getDeliveredQuantityUnitCode());
-        assertEquals("d", despatchLine.getItem().getDescription());
+        assertEquals("d", despatchLine.getItem().getName());
 
         switch (da.getStatus().getName()) {
             case ACCEPTED:

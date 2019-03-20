@@ -59,7 +59,7 @@
         "DeliveredQuantity": 1.0,
         "DeliveredQuantityUnitCode": "EA",
         "Item": {
-          "Description": "d"
+          "Name": "d"
         }
       }
     ],
