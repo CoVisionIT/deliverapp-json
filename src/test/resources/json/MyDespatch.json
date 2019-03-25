@@ -55,6 +55,10 @@
     "DespatchLine": [
       {
         "ID": "1",
+        "Status": {
+          "Name": "REMARKS",
+          "Remarks": "Not OK Line"
+        },
         "Note": "1",
         "DeliveredQuantity": 1.0,
         "DeliveredQuantityUnitCode": "EA",

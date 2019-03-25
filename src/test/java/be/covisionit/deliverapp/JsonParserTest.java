@@ -60,6 +60,8 @@ public class JsonParserTest {
 
         DespatchLine despatchLine = da.getDespatchLine().get(0);
         assertEquals("1", despatchLine.getID());
+        assertEquals("Not OK Line", despatchLine.getStatus().getRemarks());
+        assertEquals(DespatchLineStatusName.REMARKS, despatchLine.getStatus().getName());
         assertEquals("1", despatchLine.getNote());
         assertEquals(1, despatchLine.getDeliveredQuantity(), 0);
         assertEquals("EA", despatchLine.getDeliveredQuantityUnitCode());

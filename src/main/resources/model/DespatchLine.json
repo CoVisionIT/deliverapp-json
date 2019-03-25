@@ -13,6 +13,10 @@
       "description": "An identifier for this despatch line.",
       "type": "string"
     },
+    "Status": {
+      "title": "Despatch Line Status",
+      "$ref": "DespatchLineStatus"
+    },
     "Note": {
       "title": "Despatch Line. Note. Text",
       "description": "Free-form text conveying information that is not contained explicitly in other structures.",
