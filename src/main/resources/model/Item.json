@@ -8,6 +8,11 @@
       "title": "Item. Name",
       "description": "A short name given to this item, such as a name from a catalogue.",
       "type": "string"
+    },
+    "ManufactureDate": {
+      "title": "Item Instance. Manufacture Date. Date",
+      "description": "The date on which this item instance was manufactured.",
+      "type": "string"
     }
   }
 }

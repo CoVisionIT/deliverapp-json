@@ -67,6 +67,13 @@ public class JsonParserTest {
         assertEquals("EA", despatchLine.getDeliveredQuantityUnitCode());
         assertEquals("d", despatchLine.getItem().getName());
 
+        DespatchLine despatchLineTime = da.getDespatchLine().get(1);
+        assertEquals("work", despatchLineTime.getID());
+        assertEquals(5, despatchLineTime.getDeliveredQuantity(), 0);
+        assertEquals("HUR", despatchLineTime.getDeliveredQuantityUnitCode());
+        assertEquals("crane", despatchLineTime.getItem().getName());
+        assertEquals("2019-12-06", despatchLineTime.getItem().getManufactureDate());
+
         switch (da.getStatus().getName()) {
             case ACCEPTED:
                 Assert.fail("expected REMARKS");
